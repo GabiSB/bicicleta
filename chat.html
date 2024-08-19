@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Aluguéis de Bicicletas</title>
+</head>
+<body>
+    <h1>Previsão de Aluguéis de Bicicletas</h1>
+    
+    <label for="weekday">Dia da Semana:</label>
+    <select id="weekday">
+        <option value="0">Domingo</option>
+        <option value="1">Segunda-feira</option>
+        <option value="2">Terça-feira</option>
+        <option value="3">Quarta-feira</option>
+        <option value="4">Quinta-feira</option>
+        <option value="5">Sexta-feira</option>
+        <option value="6">Sábado</option>
+    </select>
+
+    <label for="weather">Condições Climáticas:</label>
+    <select id="weather">
+        <option value="sunny">Ensolarado</option>
+        <option value="cloudy">Nublado</option>
+        <option value="rainy">Chuvoso</option>
+    </select>
+
+    <button onclick="predictRentals()">Prever Aluguéis</button>
+
+    <h2>Previsão: <span id="prediction">--</span> aluguéis</h2>
+
+    <input type="file" id="fileInput" />
+
+    <script src="forecast.js"></script>
+</body>
+</html>
